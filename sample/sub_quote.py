@@ -21,6 +21,9 @@ if len(sys.argv) < 2: #len小於2也就是不帶參數啦
 else:
     code = sys.argv[1]
 
+
+# TOPIC = [LQ]/exchange/code' L收盤價 Q五檔委買賣
+# TOPIC = # (全部）
 TOPIC = 'L/{}'.format(code)
 
 client.connect("vpn.alvin.tw", 1883, 60)
